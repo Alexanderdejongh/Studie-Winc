@@ -1,0 +1,62 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    Color: Red;
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+    padding: 3% 10%;
+    width: auto;
+
+}
+
+.black-border {
+    border: 5px solid black;
+}
+
+#h1 {
+    background-color: green;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.button {
+    background-color: #484948;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+
+}
+
+.buttonbox {
+    padding-top: 1em;
+}
+
+h2 {
+    color: rgb(24, 194, 137);
+    text-align: center;
+
+}
+
+.headerpict {
+    padding-top: -2px;
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
