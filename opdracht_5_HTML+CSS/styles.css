@@ -1,0 +1,154 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    Color: Red;
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+    padding: 3% 10%;
+    width: auto;
+}
+
+main,
+header {
+    border: 2px dotted green;
+    margin: 15px 0px 15px 0px;
+}
+
+.paragraaf-1 {
+    padding-left: 10%;
+}
+
+p {
+    font-size: 16px;
+}
+
+.black-border {
+    border: 5px solid black;
+}
+
+#h1 {
+    background-color: green;
+    font-size: 40px;
+    text-align: center;
+}
+
+/** Knoppen **/
+
+.button {
+    background-color: #484948;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: black;
+    color: red;
+}
+
+ul {
+    list-style: none;
+
+}
+
+li {
+    margin: 5px;
+    display: inline-block;
+}
+
+.btn {
+    background-color: #484948;
+    border: 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: white;
+    color: blue;
+}
+
+.buttonbox {
+    padding-top: 1em;
+}
+
+h2 {
+    color: rgb(24, 194, 137);
+    text-align: center;
+
+}
+
+.headerpict {
+    padding-top: -2px;
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.contactpic {
+    padding-top: -2px;
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+Form p {
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    #h1 {
+        font-size: 30px;
+        color: black;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .paragraaf-1 {
+        padding: 0;
+        text-align: center;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    #h1 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    li,
+    .button,
+    .btn {
+        display: block;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
