@@ -1,0 +1,217 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow',
+        Arial,
+        sans-serif;
+    padding: 3% 10%;
+    width: auto;
+}
+
+main,
+header {
+    border: 2px dotted green;
+    margin: 15px 0px 15px 0px;
+}
+
+.headerpict {
+    padding-top: -2px;
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+p {
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+#h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/** Knoppen **/
+
+.navi {
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+
+}
+
+li {
+    margin: 5px;
+
+}
+
+.btn {
+
+    background-color: #484948;
+    border: 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.btn-1 {}
+
+.btn:hover {
+    background: white;
+    color: blue;
+}
+
+.buttonbox {
+    padding-top: 1em;
+}
+
+h2 {
+    color: rgb(24, 194, 137);
+    text-align: center;
+
+}
+
+
+Form p {
+    color: black;
+}
+
+/* Grid */
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 10px;
+}
+
+.menu {
+    grid-row: 1;
+    grid-column: 1/-1;
+
+}
+
+.header {
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.main {
+
+    grid-row: 3;
+    grid-column: 1/-1;
+}
+
+.footer {
+    grid-row: 4;
+    grid-column: 1/-1;
+    color: red;
+    background-color: black;
+
+}
+
+
+@media (max-width: 600px) {
+    #h1 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    li {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    #h1 {
+        font-size: 40px;
+    }
+
+    p {
+        display: block;
+        padding: 0;
+        text-align: center;
+        line-height: 15px;
+    }
+
+    .btn-1 {
+        display: block;
+        width: 100%;
+    }
+
+    .menu {
+        grid-row: 1;
+        grid-column: 1/2;
+    }
+
+    .header {
+        grid-row: 1;
+        grid-column: 2/-1;
+    }
+
+    .main {
+
+        grid-row: 2/4;
+        grid-column: 1/-1;
+    }
+
+    .footer {
+        grid-row: 4;
+        grid-column: 1/-1;
+        color: red;
+        background-color: blue;
+
+    }
+
+    @media (min-width: 1600px) {
+        .menu {
+            grid-row: 1;
+            grid-column: 2/4;
+        }
+
+        .header {
+            grid-row: 2;
+            grid-column: 1/3;
+            font-size: 20px;
+        }
+
+        .btn {
+            font-size: 20px;
+        }
+
+        #h1 {
+            font-size: 60px;
+        }
+
+        .main {
+
+            grid-row: 2/4;
+            grid-column: 3/-1;
+        }
+
+        .footer {
+            grid-row: 4;
+            grid-column: 1/-1;
+            color: red;
+            background-color: black;
+
+        }
+    }
+}
