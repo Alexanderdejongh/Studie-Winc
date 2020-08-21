@@ -1,0 +1,216 @@
+html {
+    background-color: rgb(145, 203, 226);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body {
+    padding: 0 1% 0 1%;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header {
+    height: 40rem;
+    width: 100%;
+    background-image: url(Plaatjes/tech.png);
+    background-size: cover;
+    background-position: top;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 10% auto 10%;
+    box-shadow: 10px 0px rgba(104, 104, 250, 0.438);
+}
+
+.title-box {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    color: rgb(5, 116, 153);
+    text-shadow: 5px 10px rgba(104, 104, 250, 0.438);
+}
+
+.main {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+}
+
+.text1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.child1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+.child2 {
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    border-top: 5px solid rgb(1, 80, 100);
+}
+
+b {
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* button*/
+ul {
+    list-style: none;
+
+}
+
+li {
+    margin: 5px;
+}
+
+.button {
+    background-color: #484948;
+    border: 1px dotted black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: black;
+    color: red;
+}
+
+/*video*/
+
+.Videos-container {
+    grid-row: 4/-1;
+    grid-column: 1/-1;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.iframe-container1 {
+    grid-column: 1;
+    grid-row: 1/2;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.iframe-container2 {
+    grid-column: 1;
+    grid-row: 2/3;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media(min-width: 1510px) {
+    .header {
+        border-bottom: 5px solid black;
+    }
+}
+
+@media(min-width: 600px) {
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media(min-width: 1250px) {
+    .header {
+        display: grid;
+        grid-template-rows: 2fr auto 1fr;
+        grid-template-columns: 10% auto 10%;
+    }
+
+    .child1 {
+        grid-row: 1/-1;
+        grid-column: 1;
+    }
+
+    .child2 {
+        grid-row: 1/-1;
+        grid-column: 2;
+    }
+
+    .Videos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    .iframe-container1 {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .iframe-container2 {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+}
+
+@media(min-width: 1450px) {
+    body {
+        padding: 0 5% 0 5%;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+}
+
+@media(min-width: 1650px) {
+    body {
+        padding: 0 10% 0 10%;
+    }
+
+    .header {
+        display: grid;
+        grid-template-rows: 4fr auto 1fr;
+        grid-template-columns: 10% auto 10%;
+    }
+}
