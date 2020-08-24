@@ -1,0 +1,120 @@
+html {
+    background-color: rgba(143, 203, 223, 0.281);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cards-container {
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1% auto 2% auto 1%;
+    grid-template-rows: auto;
+}
+
+h1 {
+    margin: 2px 5px 5px 10px;
+    color: rgba(87, 29, 245, 0.658);
+}
+
+h2 {
+    margin: 2px 5px 5px 10px;
+    color: rgba(105, 52, 250, 0.658);
+    font-size: 12px;
+
+}
+
+p {
+    margin-top: -20px;
+    margin: 2px 2px 2px 10px;
+    color: rgba(30, 141, 192, 0.864);
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1% auto 2% auto 30%;
+}
+
+.box-a-d {
+    margin-left: -25px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+li>p {
+    text-align: center;
+}
+
+.text1 {
+    color: rgba(65, 175, 2, 0.589);
+}
+
+.text2 {
+    color: rgba(175, 2, 2, 0.589);
+
+}
+
+.appr {
+    grid-column: 2/3;
+    border: 2px solid rgba(65, 175, 2, 0.589);
+}
+
+.delc {
+    grid-column: 4/5;
+    border: 2px solid rgba(175, 2, 2, 0.589);
+}
+
+.card1 {
+    grid-column: 2/3;
+    border: 3px solid rgba(22, 142, 255, 0.322);
+    background-color: rgba(5, 197, 197, 0.623);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.card2 {
+    grid-column: 4/5;
+    border: 3px solid rgba(22, 142, 255, 0.295);
+    background-color: rgba(5, 197, 197, 0.164);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.picture::after {
+    content: url('//unsplash.it/80/80');
+    display: inline-block;
+    margin: -30px 0 0 60px;
+
+}
+
+@media (max-width : 600px) {
+    .card1 {
+        grid-row: 1;
+        grid-column: 2/5;
+    }
+
+    .card2 {
+        margin-top: 10px;
+        grid-row: 2;
+        grid-column: 2/5;
+    }
+}
