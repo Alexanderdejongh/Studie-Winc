@@ -1,0 +1,314 @@
+html {
+    background-color: rgba(143, 203, 223, 0.281);
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+
+}
+
+body {
+    margin: 0;
+}
+
+/*Nav*/
+
+.navi {
+    margin-top: -15px;
+}
+
+.nav-box>li {
+    height: 30px;
+}
+
+.nav-box {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2% 17% 17% 17% 17% 22% 8%;
+    border: 3px solid rgba(5, 197, 197, 0.623);
+    grid-gap: 10px;
+}
+
+.nav-box>li:hover {
+    background-color: rgba(5, 197, 197, 0.623);
+}
+
+li>a:hover {
+    color: rgba(0, 0, 0, 0.623);
+}
+
+.nav-item1 {
+    grid-column: 2/3;
+}
+
+.nav-item2 {
+    grid-column: 3/4;
+}
+
+.nav-item3 {
+    grid-column: 4/5;
+}
+
+.nav-item4 {
+    grid-column: 5/6;
+}
+
+.nav-item5 {
+    grid-column: 6/7;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item5>p {
+    justify-content: start;
+    width: 20%;
+    height: 35px;
+    margin: 0;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.nav-item5>input {
+    justify-content: end;
+    width: 75%;
+    margin-right: 5%;
+    height: 35px;
+}
+
+.currentPage {
+    background-color: rgba(2, 175, 132, 0.589);
+}
+
+
+/*CARDS*/
+.cards-container {
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1% auto 2% auto 1%;
+    grid-template-rows: auto;
+}
+
+.card1 {
+    grid-column: 2/3;
+    border: 3px solid rgba(22, 142, 255, 0.322);
+    background-color: rgba(5, 197, 197, 0.164);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.card2 {
+    grid-column: 4/5;
+    border: 3px solid rgba(22, 142, 255, 0.295);
+    background-color: rgba(5, 197, 197, 0.164);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.card2:hover,
+.card1:hover {
+    background-color: rgba(5, 197, 197, 0.623);
+    border-color: rgba(5, 197, 197, 0.164);
+    ;
+}
+
+
+
+/* Styling*/
+
+h1 {
+    margin: 2px 5px 5px 10px;
+    color: rgba(87, 29, 245, 0.658);
+}
+
+h2 {
+    margin: 2px 5px 5px 10px;
+    color: rgba(105, 52, 250, 0.658);
+    font-size: 12px;
+
+}
+
+p {
+    margin-top: -20px;
+    margin: 2px 2px 2px 10px;
+    color: rgba(30, 141, 192, 0.864);
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: rgba(255, 255, 0, 0.288);
+}
+
+/*buttons*/
+
+.box-a-d {
+    margin-left: -25px;
+    display: grid;
+    grid-template-columns: 1% auto 2% auto 30%;
+}
+
+li {
+    list-style: none;
+    padding: 10px 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+li>p {
+    text-align: center;
+}
+
+.text1 {
+    color: rgba(65, 175, 2, 0.589);
+}
+
+.text2 {
+    color: rgba(175, 2, 2, 0.589);
+
+}
+
+.appr {
+    grid-column: 2/3;
+    border: 2px solid rgba(65, 175, 2, 0.589);
+}
+
+.delc {
+    grid-column: 4/5;
+    border: 2px solid rgba(175, 2, 2, 0.589);
+}
+
+
+.appr:hover {
+    margin-top: -4px;
+    background-color: rgba(65, 175, 2, 0.589);
+    border: 5px solid rgba(65, 175, 2, 0.589);
+    font-size: 25px;
+}
+
+.text1:hover {
+    padding: 0;
+    margin: 0;
+    color: rgba(105, 52, 250, 0.658);
+}
+
+.delc:hover {
+    margin-top: -4px;
+    background-color: rgba(175, 2, 2, 0.589);
+    border: 5px solid rgba(175, 2, 2, 0.589);
+    font-size: 25px;
+}
+
+.text2:hover {
+    padding: 0;
+    margin: 0;
+    color: rgba(105, 52, 250, 0.658);
+}
+
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.picture::after {
+    content: url('//unsplash.it/80/80');
+    display: inline-block;
+    margin: -30px 0 0 60px;
+}
+
+.login {
+    height: 50px;
+    display: grid;
+    grid-template: auto / 20% auto 20%;
+}
+
+li {
+    background-color: rgba(5, 197, 197, 0.164);
+    display: flex;
+    justify-content: center;
+}
+
+li>p {
+    width: 100px;
+}
+
+ul.li5>input {
+    width: 80%;
+}
+
+.login>input {
+    display: inline-block;
+    width: 30%;
+    height: 20px;
+
+}
+
+.li1 {
+    grid-row: 1;
+    grid-column: 2/3;
+}
+
+.li2 {
+    grid-row: 2;
+    grid-column: 2/3;
+}
+
+.li3 {
+    grid-row: 3;
+    grid-column: 2/3;
+}
+
+.li4 {
+    grid-row: 4;
+    grid-column: 2/3;
+}
+
+.li5 {
+    grid-row: 5;
+    grid-column: 2/3;
+}
+
+input:focus {
+    color: green;
+    font-size: 20px;
+    height: 25px;
+}
+
+@media (max-width : 600px) {
+    .card1 {
+        grid-row: 1;
+        grid-column: 2/5;
+    }
+
+    .card2 {
+        margin-top: 10px;
+        grid-row: 2;
+        grid-column: 2/5;
+    }
+}
+
+
+@media (max-width : 1200px) {
+    .nav-item5>p {
+        margin-top: 7px;
+        font-size: 16px;
+        margin-left: -15px;
+        margin-right: 5px;
+    }
+
+    .nav-item5>input {
+        margin-right: 1%;
+        width: 60%;
+    }
+}
