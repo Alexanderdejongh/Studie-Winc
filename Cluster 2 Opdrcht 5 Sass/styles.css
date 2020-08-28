@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
-
 /* Global */
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -14,49 +13,51 @@ body {
   background-color: #ecffe9;
 }
 
-h1 {
+body h1 {
   font-size: 1.7em;
   font-weight: 700;
   line-height: 1.5em;
   text-transform: uppercase;
 }
 
-h2 {
+body h2 {
   text-transform: uppercase;
 }
 
-h4 {
+body h4 {
   font-size: 0.8em;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-h6 {
+body h6 {
   font-weight: 500;
 }
 
-a {
+body a {
   text-decoration: none;
   color: #090b08;
 }
 
-ul {
+body ul {
   list-style: none;
 }
 
-.btn {
+body .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
   border: solid 1px #000;
-  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 
-.btn:hover,
-.btn:focus {
+body .btn:hover, body .btn:focus {
   -webkit-transform: translate(0px, -2px);
-  transform: translate(0px, -2px);
+          transform: translate(0px, -2px);
   -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   -webkit-transition: all 0.3s ease-out;
@@ -69,17 +70,17 @@ form {
   display: flex;
 }
 
-form input:first-child {
+formfirst-child {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 80%;
-  flex: 1 0 80%;
+      -ms-flex: 1 0 80%;
+          flex: 1 0 80%;
   background-color: transparent;
 }
 
-form input:last-child {
+forminput:last-child {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 20%;
-  flex: 1 0 20%;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
   border-left: 0;
   cursor: pointer;
   background-color: #c0eea9;
@@ -87,7 +88,7 @@ form input:last-child {
   transition: all 0.25s ease;
 }
 
-#submit:hover {
+form #submit:hover {
   background-color: #000;
   color: #fff;
   -webkit-transition: all 0.25s ease;
@@ -108,7 +109,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -119,43 +120,10 @@ header {
   box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
 }
 
-.brand-logo img {
+header #header-img {
   width: auto;
   padding-top: 20px;
   height: 7.5em;
-}
-
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding-bottom: 1em;
-}
-
-.title.title-right {
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.line {
-  width: 3em;
-  height: 1px;
-  background-color: #000;
-  margin-right: 1em;
-}
-
-.line.line-right {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-  margin-right: 0;
-  margin-left: 1em;
 }
 
 /* Hero Section */
@@ -166,18 +134,18 @@ header {
   display: flex;
   height: 100vh;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #97d279;
 }
 
-.hero-img img {
+.hero .hero-img img {
   display: block;
   height: auto;
   width: 15.5em;
 }
 
-.hero-text {
+.hero .hero-text {
   max-width: 700px;
   text-align: center;
   padding: 20px;
@@ -188,43 +156,64 @@ header {
   padding: 20px;
 }
 
-.featured .wrapper {
+.featured .featured-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+
+.featured .featured-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#featured .image img {
+.featured .featured-image img {
   width: 300px;
 }
 
-.text-featured {
+.featured .featured_text {
   max-width: 700px;
   text-align: center;
   padding: 20px;
 }
 
-.text-featured p {
+.featured .featured_text p {
   text-align: justify;
   padding: 20px;
   line-height: 1.4em;
+}
+
+.featured .featured-title-left {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.featured .featured-title-left .line {
+  width: 3em;
+  height: 1px;
+  background-color: #000;
+  margin-right: 1em;
+}
+
+.featured .featured-title-left .line-right {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-right: 0;
+  margin-left: 1em;
 }
 
 /* About Section */
-.text-about {
-  max-width: 700px;
-  text-align: center;
-  padding: 20px;
-}
-
-.text-about p {
-  text-align: justify;
-  padding-bottom: 1em;
-  line-height: 1.4em;
-}
-
 .about {
   background-color: #97d279;
   padding: 20px;
@@ -236,26 +225,32 @@ header {
   display: flex;
 }
 
-.about .text {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 40%;
-  flex: 1 0 40%;
+.about .wrapper .text-about {
+  max-width: 700px;
+  text-align: center;
+  padding: 20px;
 }
 
-.video-wrapper {
+.about .wrapper .text-about p {
+  text-align: justify;
+  padding-bottom: 1em;
+  line-height: 1.4em;
+}
+
+.about .video-wrapper {
   position: relative;
   padding-bottom: 33.25%;
   overflow: hidden;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-box-flex: 2;
-  -ms-flex: 2 0 55%;
-  flex: 2 0 55%;
+      -ms-flex: 2 0 55%;
+          flex: 2 0 55%;
   margin: 1.4em 0;
 }
 
-.video-wrapper iframe {
+.about .video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -263,17 +258,23 @@ header {
   height: 100%;
 }
 
+.about .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+}
+
 /* Contact Section */
 .contact {
   padding: 20px;
 }
 
-.wrapper .contact {
+.contact .contact-wrapper .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form-wrapper,
@@ -284,5 +285,4 @@ header {
 .copy-wrapper {
   padding-left: 20px;
 }
-
-/*# sourceMappingURL=Styles.css.map */
+/*# sourceMappingURL=styles.css.map */
