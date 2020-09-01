@@ -1,33 +1,25 @@
-const age = 20;
+var age = 20;
 
-if (age >= 18 && age <= 25){
-  console.log('Je krijgt 50% korting!');
+if (age <= 18 && age >= 25) {
+  console.log("Je krijgt 50% korting op je biertje");
 }
 
-else if (age =< 18){
-  console.log('Je krijgt geen korting!');
-}
+var name = 'Alexander';
 
-const name = 'Alexander';
-
-if (name === 'Sarah' || Name === 'Bram'){
+if (name === 'Sarah' || Name === 'Bram') {
   console.log('Je krijgt een gratis biertje!');
-}
-
-else if (name !== 'Sarah' || Name !== 'Bram'){
+} else if (name !== 'Sarah' || Name !== 'Bram') {
   console.log('Je hebt geen gratis biertje gewonnen!');
 }
 
-const totalAmount = 40;
+var totalAmount = 40;
 
-if (totalAmount ==25){
+if (totalAmount >=25) {
   console.log('U krijg een gratis portie (vega)bitterballen');
-}
-
-else if(totalAmount == 50){
-  console.log('U krijg een gratis portie portie nachos')
-}
-
-else if (totalAmount >= 100){
-  console.log('U krijg een gratis flesje champagne')
+} if(totalAmount >= 50) {
+  console.log('U krijg een gratis portie portie nachos');
+} if(totalAmount >= 100) {
+  console.log('U krijg een gratis flesje champagne');
+} else if (totalAmount <= 25){
+  console.log("Helaas geen korting, maar leuk dat je er bent");
 }
